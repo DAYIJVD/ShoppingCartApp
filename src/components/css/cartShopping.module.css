@@ -1,0 +1,74 @@
+.cartShopping{
+    background-color: black;
+    color: aqua;
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-around;
+}
+.checkOut{
+    margin: 1rem;
+    padding: 2rem;
+    background-color: rgba(127, 255, 212, 0.395);
+    border-radius: 10px;
+    height: fit-content;
+}
+.checkOut p{
+    padding: 1rem;
+}
+.checkOut a{
+    padding: 1rem;
+    text-decoration: none;
+    color: white ;
+}
+.checkOut a:hover{
+    color: rgba(240, 248, 255, 0.529);
+}
+.checkOut h3{
+    padding: 1rem;
+
+}
+.checkOut h2{
+    padding: 1rem;
+    
+}
+.checkOut button{
+    margin: 0.4rem;
+    padding: 0.7rem;
+    cursor: pointer;
+    border:1px solid rgba(0, 255, 255, 0.222);
+    background-color: black;
+    color: aqua;
+    border-radius: 7px;
+    transition: all 0.48s;
+}
+.checkOut button:hover{
+    background-color: rgba(95, 98, 101, 0.485);
+}
+.empty{
+    text-align: start;
+    position: relative;
+}
+.empty h3{
+    padding: 0.5rem;
+}
+.empty a{
+    padding: 0.5rem;
+ text-decoration: none;
+ border-radius: 7px;
+ padding: 0.5rem;
+ color: rgb(255, 255, 255);
+ text-decoration: none;
+ transition: all 0.4s;
+}
+.empty a:hover{
+    color: rgba(255, 255, 255, 0.335);
+}
+@media (max-width:550px) {
+    .cartShopping{
+        background-color: black;
+        color: aqua;
+        display: flex;
+        flex-direction: column-reverse;
+        min-height: 100vh;
+    } 
+}
