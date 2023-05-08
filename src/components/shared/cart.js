@@ -12,7 +12,7 @@ const Cart = ({data}) => {
     return (
         <div className={styles.cart}>
          <img className={styles.product} alt="product" src={data.image} /> 
-        <p>{State.itemsCounter}</p>
+        <p>{data.quantity}</p>
          <div className={styles.buttons}>
          {
              isInCart(State,data.id)&&
