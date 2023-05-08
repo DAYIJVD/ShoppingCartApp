@@ -63,12 +63,30 @@
 .empty a:hover{
     color: rgba(255, 255, 255, 0.335);
 }
+.centerCarts{
+    text-align: center;
+    margin: 0 auto;
+}
+.carts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
 @media (max-width:550px) {
     .cartShopping{
         background-color: black;
         color: aqua;
         display: flex;
         flex-direction: column-reverse;
+        justify-content: flex-end;
         min-height: 100vh;
     } 
+    .carts{
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
 }

@@ -1,156 +1,141 @@
 .cart{
-    width: 700px;
+    width: fit-content;
+    height: fit-content;
     margin: 1rem;
     display: flex;
+    flex-direction: column;
     background-color: rgba(127, 255, 212, 0.348);
     overflow: hidden;
     position: relative;
     border-radius: 12px;
     align-items: center;
+    overflow: hidden;
+    transition: all 0.3s;
+    border: 1px solid aqua;
+}
+.cart:hover{
+    border: 1px solid rgb(238, 238, 238);
+    box-shadow: 0 12px 28px rgba(255, 255, 255, 0.139), 0 10px 10px rgba(0,0,0,0.22);
 }
 .product{
-    width: 150px;
-    height: 200px;
+    width: 180px;
+    height: 250px;  
 }
-   .buttons{
-    position: absolute;
-    bottom: 5px;
-    right: 15px;
-    }
-    .add{
-       
-        cursor: pointer;
-        border-radius: 10px;
-        height: 35px;
-        padding: 10px;
-        background-color: rgb(0, 0, 0);
-        color: aqua;
-        border: 1px solid rgba(0, 255, 255, 0.517);
-        transition: 0.1s;
-    }
-    .add:hover{
-        background-color: rgba(0, 0, 0, 0.637);
-       }
-    .remove{
-        position: absolute;
-        border-radius: 10px;
-        bottom: 8px;
-        right: 17.5px;
-        cursor: pointer;
-        width: 35px;
-        height: 35px;
-        border: none;
-        background-color: rgba(53, 53, 53, 0.307);
-        transition: all 0.4s;
-    }
-    .remove:hover{
-        background-color: rgba(3, 254, 212, 0.602);
-       }
-    .remove img{
-        position: relative;
-        right: 5.5px;
-        width: 30px;
-        height: 30px;
-    
-    }
-    .increase{
-        position: absolute;
-        bottom: 8px;
-        right: 55px;
-        cursor: pointer;
-        width: 35px;
-        height: 35px;
-        font-weight: bold;
-        border-radius: 10px;
-        color: aqua;
-        border: none;
-        background-color: rgb(4, 4, 4);
-        transition: all 0.4s;
-    }
-    .increase:hover{
-        background-color: rgba(0, 0, 0, 0.637);
-       }
-    .decrease{
-        position: absolute;
-        bottom: 8px;
-        right: 17.5px;
-        cursor: pointer;
-        width: 35px;
-        height: 35px;   
-        border-radius: 10px;
-        font-weight: bold;
-        color: aqua;
-        border: none;
-        background-color: rgb(4, 4, 4);
-        cursor: pointer;
-        transition: all 0.4s;
-    
-    
-    }
-    .decrease:hover{
-        background-color: rgba(0, 0, 0, 0.637);
-       }
-   .cart h3{
-    padding: 0.5rem 1rem;
-    margin: 1rem;
-    background-color: black;
-    border-radius: 7px;
+.cart p{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    padding: 0.4rem 0rem;
+    background-color: rgba(0, 0, 0, 0.692);
+
    }
-   .icon{
-    width: 20px;
-    height: 20px;
-}
-.buttons{
+   .buttons{
+    width: 100%;
     text-align:center;
-    width: 84px;
-    height: 45px;
-    padding: 0.5rem 1rem;
-    margin: 1rem;
-    background-color: rgba(56, 172, 172, 0.563);
-    border-radius: 7px;
-    position: absolute;
-    top: 30%;
-    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 255, 170);
+    padding: 6px 0;
+
 }
+.remove{
+ 
+    border-radius: 10px;
+   
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: rgba(53, 53, 53, 0.307);
+    transition: all 0.4s;
+}
+.remove:hover{
+    background-color: rgba(3, 254, 212, 0.602);
+   }
+.remove img{
+   position: relative;
+   right: 9px;
+    width: 25px;
+    height: 25px;
+
+}
+.increase{
+  
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: aqua;
+    border: none;
+    background-color: rgb(4, 4, 4);
+    transition: all 0.4s;
+}
+.increase:hover{
+    background-color: rgba(0, 0, 0, 0.637);
+   }
+.decrease{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;   
+    border-radius: 10px;
+    font-weight: bold;
+    color: aqua;
+    border: none;
+    background-color: rgb(4, 4, 4);
+    cursor: pointer;
+    transition: all 0.4s;
+
+
+}
+.decrease:hover{
+    background-color: rgba(0, 0, 0, 0.637);
+   }
 @media (max-width:550px) {
     .cart{
-        width: 443px;
+        transition: all 0.4s;
+        width: fit-content;
         margin: 1rem;
         display: flex;
+        flex-direction: column;
         background-color: rgba(127, 255, 212, 0.348);
         overflow: hidden;
         position: relative;
         border-radius: 12px;
         align-items: center;
+        overflow: hidden;
+        border: 1px solid rgb(255, 255, 255);
+    }
+    .cart:hover{
+        box-shadow: 0 12px 28px rgba(255, 255, 255, 0.139), 0 10px 10px rgba(0,0,0,0.22);
     }
     .product{
-        width: 100px;
-        height: 150px;
+        width: 120px;
+        height: 140px;
+      
     }
-    .cart h3{
-        font-size: 10px;
-        padding: 0.5rem 1rem;
-        margin: 1rem;
-        background-color: black;
-        border-radius: 7px;
+    .cart p{
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        padding: 0.4rem 0rem;
+        background-color: rgb(0, 0, 0);
        }
        .buttons{
+        width: 100%;
         text-align:center;
-        width: 64px;
-        height: 15px;
-        padding: 0.5rem 1rem;
-        margin: 1rem;
-        background-color: rgba(127, 255, 212, 0);
-        border-radius: 7px;
-        position: absolute;
-        top: 30%;
-        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 255, 170);
+        padding: 6px 0;
+
     }
     .remove{
-        position: absolute;
+     
         border-radius: 10px;
-        bottom: 5px;
-        right: 11.5px;
+       
         cursor: pointer;
         width: 25px;
         height: 25px;
@@ -161,17 +146,16 @@
     .remove:hover{
         background-color: rgba(3, 254, 212, 0.602);
        }
-    .remove img{
-        position: relative;
-        right: 4px;
-        width: 20px;
-        height: 20px;
+    .remove img{ 
+       position: relative;
+       right:6.5px;
+       bottom: 2px;
+        width: 25px;
+        height: 25px;
     
     }
     .increase{
-        position: absolute;
-        bottom: 5px;
-        right: 45px;
+      
         cursor: pointer;
         width: 25px;
         height: 25px;
@@ -186,9 +170,6 @@
         background-color: rgba(0, 0, 0, 0.637);
        }
     .decrease{
-        position: absolute;
-        bottom: 5px;
-        right: 11.5px;
         cursor: pointer;
         width: 25px;
         height: 25px;   

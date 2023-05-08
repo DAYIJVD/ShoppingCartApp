@@ -1,5 +1,5 @@
 .Navbar{
-    height: 54px;
+    height: 52px;
     border-bottom: 4px solid aqua;
     display: flex;
     justify-content: space-between;
@@ -27,6 +27,11 @@
     background-color: aqua;
     border-radius: 50%;
     z-index: 1;
+    transition: all 0.1s;
+}
+.icon:hover{
+    background-color: rgba(0, 255, 255, 0.61);
+
 }
 .Navbar div{
     position: relative;
@@ -40,4 +45,52 @@
     border-radius: 50%;
     color:aqua;
     background-color: rgb(67, 66, 66);
+}
+@media (max-width:550px){
+    .Navbar{
+        height: 35px;
+        border-bottom: 4px solid aqua;
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem 4rem ;
+        background-color: black;
+    }
+    .Navbar h3{
+        font-size: medium;
+        padding: 0.55rem 0.5rem;
+        background-color: aqua;
+        transition: all 0.3s;
+    }
+    .Navbar h3:hover{
+       background-color: rgba(0, 255, 255, 0.483);
+    }
+    .Product{
+    
+        color: rgb(0, 0, 0);
+      text-align:center;
+      text-decoration: none;
+    }
+    .icon{
+        margin-top:0.2rem ;
+        padding:3px;
+        width: 30px;
+        height: 25px;
+        background-color: aqua;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    .Navbar div{
+        position: relative;
+    }
+    .counter{
+        font-size: 8px;
+        z-index: 2;
+        padding: 3px 5px;
+        position: absolute;
+        right: -5px;
+        top: 18px;
+        border-radius: 50%;
+        color:aqua;
+        background-color: rgb(67, 66, 66);
+    }  
 }

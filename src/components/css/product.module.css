@@ -6,6 +6,11 @@
     margin: 2rem;
     background-color: rgba(182, 239, 239, 0.53);
     position: relative;
+    transition: all 0.3s;
+}
+.cart:hover{
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 12px 28px rgba(255, 255, 255, 0.139), 0 10px 10px rgba(0,0,0,0.22);
 }
 .cart img{
     width: 250px;
@@ -114,57 +119,64 @@ right: 15px;
 }
 @media (max-width:650px) {
     .cart{
-        height: 300px;
+        transition: all 0.4s;
+        height:197px;
         border: 1px solid rgba(0, 255, 255, 0.305);
-        border-radius: 20px;
+        border-radius: 10px;
         overflow: hidden;
         margin: 2rem;
         background-color: rgba(182, 239, 239, 0.53);
         position: relative;
     }
+    .cart:hover{
+        box-shadow: 0 12px 28px rgba(255, 255, 255, 0.139), 0 10px 10px rgba(0,0,0,0.22);
+    }
     .cart img{
-        width: 150px;
-        height: 200px;
+        width: 90px;
+        height: 140px;
     }  
     .cart h3{
-        font-size: 14px;
+        
+        font-size: 7.5px;
         position: relative;
         left: 5px;
     }
     .cart p{
-        font-size: 10px;
+        font-size: 8px;
         position: relative;
         left: 5px;
     }
     .add{
-       font-size: 10px;
+       font-size: 6.2px;
         cursor: pointer;
-        border-radius: 10px;
-        height: 25px;
-        padding: 7px;
+        border-radius: 5px;
+        height: 20px;
+        padding: 3px;
         background-color: rgb(0, 0, 0);
         color: aqua;
         border: 1px solid rgba(0, 255, 255, 0.517);
         transition: 0.4s;
+        position: relative;
+        left:13px;
     }
     .add:hover{
-        font-size: 10px;
+        font-size: 6.2px;
         cursor: pointer;
-        border-radius: 10px;
-        height: 25px;
-        padding: 7px;
+        border-radius: 5px;
+        height: 20px;
+        padding: 3px;
         background-color: rgb(0, 0, 0);
         color: aqua;
         background-color: rgba(0, 0, 0, 0.637);
        }
     .remove{
         position: absolute;
-        border-radius: 10px;
-        bottom: 4px;
-        right: 0px;
+        border-radius: 5px;
+        bottom: 1px;
+        left: -8px;
         cursor: pointer;
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
         border: none;
         background-color: rgba(53, 53, 53, 0.307);
         transition: all 0.4s;
@@ -174,20 +186,21 @@ right: 15px;
        }
     .remove img{
         position: relative;
-        right: 5.5px;
-        width: 20px;
-        height: 20px;
+        right: 3px;
+        top: 2px;
+        width: 14px;
+        height: 14px;
     
     }
     .increase{
         position: absolute;
-        bottom: 4px;
-        right: 27px;
+        bottom: 0px;
+        right: 10px;
         cursor: pointer;
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
         font-weight: bold;
-        border-radius: 10px;
+        border-radius: 5px;
         color: aqua;
         border: none;
         background-color: rgb(4, 4, 4);
@@ -198,12 +211,12 @@ right: 15px;
        }
     .decrease{
         position: absolute;
-        bottom: 4px;
-        right: 0;
+        bottom: 0px;
+        left: -8px;
         cursor: pointer;
-        width: 25px;
-        height: 25px;   
-        border-radius: 10px;
+        width: 20px;
+        height: 20px;   
+        border-radius: 5px;
         font-weight: bold;
         color: aqua;
         border: none;
@@ -217,15 +230,15 @@ right: 15px;
         background-color: rgba(0, 0, 0, 0.637);
        }
        .cart a{
-        font-size: 10px;
-        padding: 0.5rem;
+        font-size: 7px;
+        padding: 0.3rem;
         position: relative;
-        left: 10px;
-        top: 20px;
+        left: 3px;
+        top: 2px;
         text-decoration: none;
         color: aqua;
         background-color: black;
-        border-radius: 10px;
+        border-radius: 5px;
         cursor: pointer;
         transition: all 0.4s;
     }
